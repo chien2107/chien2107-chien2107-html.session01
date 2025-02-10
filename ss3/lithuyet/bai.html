@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    import tkinter as tk
+from PIL import Image, ImageTk
+import random
+import sys
+
+max_windows = 200 # So luong cua so 
+window_count = 0 #so luong cua so da mo
+
+def show_custom_messagebox():
+    message_window = tk.Toplevel()
+    message_window.title("I LOVE YOU")
+    
+    # Tai anh nen 
+    background_image = Image.open("..\Job\Python\Tranbonho\hihi.jpg") 
+    background_photo = ImageTk.PhotoImage(background_image)
+    
+    # Tao label cho hinh anh
+    background_label = tk.Label(message_window, image=background_photo)
+    background_label.image = background_photo  # Giu tham chieu den hinh anh
+    background_label.place(x=0, y=0, relwidth=1, relheight=1)
+    
+    width = 450
+    height = 350
+    
+    # Can chinh cua so giua man hinh
+    screen_width = message_window.winfo_screenwidth()
+    screen_height = message_window.winfo_screenheight()
+    x = (screen_width // 2) - (width // 2)
+    y = (screen_height // 2) - (height // 2)
+    message_window.geometry(f"{width}x{height}+{x}+{y}")
+    
+    # Nut de nhan vao va goi ham create_window 
+    button = tk.Button(message_window, text="Nhấp vào đây nè!", bg="pink", font=("Arial", 16, "bold"), command=lambda:[create_window(), message_window.destroy()])
+    button.pack(pady=155)
+
+def create_window():
+    global window_count
+    if window_count >= max_windows:
+        sys.exit()
+        
+    window = tk.Toplevel()
+    window.geometry("200x100")
+    window.configure(bg="pink")
+
+    label = tk.Label(window, text="Nhớ em!", bg="pink", font=("Arial", 14, "bold"))
+    label.pack(expand=True)
+    
+    x = random.randint(0, window.winfo_screenwidth() - 200)
+    y = random.randint(0, window.winfo_screenheight() - 100)
+    window.geometry(f"+{x}+{y}")
+
+    window_count +=1
+    window.after(175, create_window) # Thoi gian de tao them 1 window moi
+    
+root = tk.Tk()
+root.withdraw()
+
+show_custom_messagebox()
+
+root.mainloop()
+
+</body>
+</html>
