@@ -1,0 +1,55 @@
+*{
+    padding: 0 ;
+    margin: 0; 
+}
+.div{
+    background-color: rgb(244, 244, 244);
+}
+.table{
+    border-collapse: collapse;
+    width: 98%;
+    height: 200px;
+    margin-left: 18px;
+}
+.headline{
+    color: rgb(61, 78, 93);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.information{
+    background-color: rgb(2, 123, 255);
+    height: 35px;
+    text-align: center;
+}
+.id{
+    width: 30px;
+}
+.body1{
+    text-align: center;
+}
+.view{
+    background-color: rgb(36, 174, 68);
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.update{
+    background-color: rgb(242, 183, 6) ;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.delete{
+    background-color:  rgb(211, 45, 62);
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.body2{
+    background-color:rgb(255, 255, 255);
+}

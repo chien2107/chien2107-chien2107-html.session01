@@ -1,0 +1,62 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.headline{
+    margin-left: 30px;
+}
+.content1{
+    margin-left: 30px;
+}
+.abc{
+    margin-left: 30px;
+    border: 4px solid rgb(69, 211, 71) ;
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.div{
+    background-color: rgb(237, 240, 243);
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 15px;
+}
+.div1{
+    margin-left: 15px;
+    background-color: white;
+    border-left: 3px solid rgb(10, 174, 113);
+    margin-right: 15px;
+}
+.headline2{
+    margin-left: 15px;
+}
+.content2{
+    color: rgb(211, 88, 117);
+}
+.center{
+    color: rgb(182, 110, 109);
+    padding-left: 15px;
+}
+.element{
+    color: rgb(233, 104, 100);
+    padding-left: 30px;
+}
+.element2{
+    color: rgb(92, 90, 202);
+}
+.center2{
+    padding-left: 15px;
+}
+.button{
+    margin-left: 15px;
+    background-color: rgb(10, 174, 113);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+}

@@ -1,0 +1,11 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.content{
+    padding-bottom: 125px;
+    padding-left: 40px;
+}
+span{
+    color: gray;
+}
