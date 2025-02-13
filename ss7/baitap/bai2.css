@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    text-align: center;
+}
+.container .header{
+    border-radius: 10px;
+    padding-top: 15px;
+    border: 2px solid rgb(185, 185, 185);
+    margin: 30px;
+    width: 350px;
+    height: 200px;
+}
+.title{
+    color: rgb(213, 51, 56);
+    padding-top: 15px;
+}
+.content{
+    padding-top: 20px;
+}
+.div .new{ 
+    margin-left: -10px;
+}

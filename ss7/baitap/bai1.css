@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: rgb(220, 214, 214);
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content{
+    padding-left: 0%;
+}
+.img{
+    vertical-align: middle;
+}
+.button2{
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    border: 0;
+    margin-left: 10px;
+}
+.button{
+    background-color: rgb(213, 31, 67);
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    border: 0;
+}

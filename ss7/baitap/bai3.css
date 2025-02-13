@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    display: inline-block;
+    vertical-align: middle;
+}
+span{
+    font-weight: 900;
+    font-size: larger;
+}
+.content{
+    opacity: 0.4;
+}
+body{
+    width: 530px;
+}
