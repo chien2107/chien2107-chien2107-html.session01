@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sign{
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+}
+body{
+    background-color: rgb(232, 232, 232);
+}
+.name{
+    padding-right: 138px;
+}
+.Email{
+    padding-right: 122px;    
+}
+.password{
+    padding-right: 97px;
+}
+button{
+    background-color: dodgerblue;
+    border-radius: 5px;
+    width: 170px;
+    height: 25px;
+    border: 0;
+    color: white;
+}
