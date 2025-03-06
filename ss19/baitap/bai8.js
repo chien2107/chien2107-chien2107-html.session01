@@ -13,6 +13,6 @@ switch (answer) {
         document.write("mùa đông");
         break;
     default:
-        document.write("không có tháng này trong năm");
+        document.write("không có thang này trong năm");
         break;
 }
