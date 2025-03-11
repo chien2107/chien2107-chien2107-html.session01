@@ -10,8 +10,7 @@ do{
         5. In ra các phần tử là số nguyên tố trong mảng và tính tổng
         6. Nhập vào một số và thống kê trong mảng có bao nhiêu phần tử đó
         7.Thêm một phần từ vào vị trí chỉ định
-        8.Thoát
-        
+        8.Thoát        
         `);
     switch(choice){
         case 1:
