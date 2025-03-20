@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>change background-color</h1>
+    <h1>Mouse click</h1>
+    <div class="container">
+        <div onclick="greenColor()" style="background-color: green;">Xanh</div>
+        <div onclick="redColor()" style="background-color: red;">Đỏ</div>
+        <div onclick="purpleColor()" style="background-color: purple;">Tím</div>
+    </div>
+</body>
+<script>
+    function greenColor(){
+        document.getElementsByTagName("body")[0].style.backgroundColor="green";
+    }
+    function redColor(){
+        document.getElementsByTagName("body")[0].style.backgroundColor="red";
+    }
+    function purpleColor(){
+        document.getElementsByTagName("body")[0].style.backgroundColor="purple";
+    }
+</script>
+</html>
