@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra Email</title>
+    <style>
+        .valid { color: green; }
+        .invalid { color: red; }
+    </style>
+</head>
+<body>
+    <p>Nhập email để kiểm tra:</p>
+    <input type="text" id="emailInput">
+    <button onclick="validateEmail()">Check</button>
+    <p id="result"></p>
+    <script>
+        function validateEmail() {
+            const email = document.getElementById("emailInput").value;
+            const result = document.getElementById("result");
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|vn)$/;
+
+            if (emailPattern.test(email)) {
+                result.textContent = "Email hợp lệ!";
+                result.className = "valid";
+            } else {
+                result.textContent = "Email không hợp lệ!";
+                result.className = "invalid";
+            }
+        }
+    </script>
+</body>
+</html>
